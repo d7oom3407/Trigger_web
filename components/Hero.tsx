@@ -20,8 +20,8 @@ const Hero: React.FC<Props> = ({ t, lang, setView }) => {
     } else {
       return (
         <>
-          أتمتة تناسب <span className="text-gradient">شغلك</span>.. <br className="hidden lg:block" />
-          وتريّح فريقك
+          خلّي الشغل <span className="text-gradient">يمشي لوحده</span>، <br className="hidden lg:block" />
+          وفريقك يشتغل بذكاء
         </>
       );
     }
@@ -31,7 +31,7 @@ const Hero: React.FC<Props> = ({ t, lang, setView }) => {
     <section className="relative pt-32 pb-16 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
         
-        <div className={`flex-1 text-center ${lang === 'en' ? 'lg:text-left' : 'lg:text-right'} relative z-10`}>
+        <div className="flex-1 text-center lg:text-start relative z-10">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] mb-6 tracking-tighter italic uppercase text-slate-900 dark:text-white">
              {renderTitle()}
           </h1>
@@ -40,7 +40,7 @@ const Hero: React.FC<Props> = ({ t, lang, setView }) => {
             {t.desc}
           </p>
           
-          <div className={`flex flex-col sm:flex-row items-center gap-5 justify-center ${lang === 'en' ? 'lg:justify-start' : 'lg:justify-start'}`}>
+          <div className="flex flex-col sm:flex-row items-center gap-5 justify-center lg:justify-start">
             <button 
               onClick={() => setView('contact')}
               className="w-full sm:w-auto bg-[#5a16dd] hover:bg-[#6b27ed] text-white font-black px-12 py-6 rounded-xl transition-all hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(90,22,221,0.3)] text-2xl italic uppercase"
@@ -58,56 +58,53 @@ const Hero: React.FC<Props> = ({ t, lang, setView }) => {
 
         <div className="flex-1 relative w-full aspect-square max-w-md group p-8">
           <div className="orbit-container scale-100">
-            {/* Expanded Radii for Orbit Spacing */}
-            <div className="orbit-circle w-[130%] h-[130%] border-dashed opacity-10"></div>
-            <div className="orbit-circle w-[105%] h-[105%] opacity-15"></div>
-            <div className="orbit-circle w-[80%] h-[80%] opacity-20"></div>
-            <div className="orbit-circle w-[55%] h-[55%] opacity-25"></div>
+            {/* Orbit Paths */}
+            <div className="orbit-circle w-[115%] h-[115%] border-dashed opacity-10"></div>
+            <div className="orbit-circle w-[85%] h-[85%] opacity-15"></div>
+            <div className="orbit-circle w-[55%] h-[55%] opacity-20"></div>
             
-            {/* Nodes */}
-            <div className="orbit-circle w-[130%] h-[130%] border-none rotating" style={{ '--duration': '35s' } as React.CSSProperties}>
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 counter-rotating" style={{ '--duration': '35s' } as React.CSSProperties}>
-                 <div className="w-10 h-10 bg-white dark:bg-white text-black rounded-xl flex items-center justify-center shadow-[0_0_20px_rgba(0,0,0,0.1)] dark:shadow-[0_0_20px_rgba(255,255,255,0.4)] font-black text-xs italic pointer-events-auto hover:scale-125 transition-transform">IN</div>
-              </div>
-            </div>
-
-            <div className="orbit-circle w-[105%] h-[105%] border-none rotating" style={{ '--duration': '25s' } as React.CSSProperties}>
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 counter-rotating" style={{ '--duration': '25s' } as React.CSSProperties}>
-                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-[0_0_30px_rgba(0,0,0,0.05)] dark:shadow-[0_0_30px_rgba(255,255,255,0.2)] p-2.5 pointer-events-auto hover:scale-125 transition-transform">
-                    <svg viewBox="0 0 100 100" className="w-full h-full">
-                       <path d="M50 0L93.3 25V75L50 100L6.7 75V25L50 0Z" fill="#ff6d5a"/>
-                       <circle cx="50" cy="50" r="15" fill="white"/>
-                    </svg>
-                 </div>
-              </div>
-            </div>
-
-            <div className="orbit-circle w-[80%] h-[80%] border-none rotating" style={{ '--duration': '18s', animationDirection: 'reverse' } as React.CSSProperties}>
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 counter-rotating" style={{ '--duration': '18s', animationDirection: 'reverse' } as React.CSSProperties}>
-                 <div className="w-12 h-12 bg-[#1a0033] rounded-xl flex items-center justify-center shadow-[0_0_30px_rgba(90,22,221,0.2)] p-2.5 border border-white/10 pointer-events-auto hover:scale-125 transition-transform">
-                    <svg viewBox="0 0 40 40" fill="none" className="w-full h-full">
-                       <path d="M20 0C8.954 0 0 8.954 0 20s8.954 20 20 20 20-8.954 20-20S31.046 0 20 0z" fill="#E6E0FF" fillOpacity=".1"/>
-                       <path d="M12 12h16v16H12z" fill="#fff"/>
-                    </svg>
-                 </div>
-              </div>
-            </div>
-
-            <div className="orbit-circle w-[55%] h-[55%] border-none rotating" style={{ '--duration': '30s' } as React.CSSProperties}>
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 counter-rotating" style={{ '--duration': '30s' } as React.CSSProperties}>
-                 <div className="w-10 h-10 bg-[#25D366] rounded-xl flex items-center justify-center shadow-[0_0_30px_rgba(37,211,102,0.3)] p-2 pointer-events-auto hover:scale-125 transition-transform">
+            {/* Zapier Icon (Outermost Orbit) */}
+            <div className="orbit-circle w-[115%] h-[115%] border-none rotating" style={{ '--duration': '40s' } as React.CSSProperties}>
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 counter-rotating" style={{ '--duration': '40s' } as React.CSSProperties}>
+                 <div className="w-16 h-16 bg-[#ff4f00] rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(255,79,0,0.4)] border border-white/20 p-3.5 hover:scale-110 transition-transform cursor-pointer">
                     <svg viewBox="0 0 24 24" fill="white" className="w-full h-full">
-                       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                       <path d="M12.44 3.75l1.6 4.3 4.41-1.3c.3-.1.6.1.7.4s-.1.6-.4.7l-4.41 1.3 3.4 3.1c.2.2.3.5.1.7-.1.3-.4.4-.7.3L13.73 11l.3 4.5c0 .3-.2.6-.5.7s-.6-.2-.7-.5l-.3-4.5-3.4 3.1c-.2.2-.5.3-.7.1-.3-.1-.4-.4-.3-.7l3.4-3.1-4.41-1.3c-.3-.1-.5-.4-.4-.7s.4-.5.7-.4l4.41 1.3-1.6-4.3c-.1-.3.1-.6.4-.7s.6.1.7.4z" />
+                    </svg>
+                 </div>
+              </div>
+            </div>
+
+            {/* n8n Icon (Middle Orbit) */}
+            <div className="orbit-circle w-[85%] h-[85%] border-none rotating" style={{ '--duration': '28s', animationDirection: 'reverse' } as React.CSSProperties}>
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 counter-rotating" style={{ '--duration': '28s', animationDirection: 'reverse' } as React.CSSProperties}>
+                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(234,75,113,0.3)] border border-slate-200 p-3 hover:scale-110 transition-transform cursor-pointer">
+                    <svg viewBox="0 0 24 24" className="w-full h-full">
+                       <circle cx="4" cy="12" r="2.5" fill="#ea4b71" />
+                       <circle cx="11" cy="12" r="2.5" fill="#ea4b71" />
+                       <circle cx="18" cy="7" r="2.5" fill="#ea4b71" />
+                       <circle cx="18" cy="17" r="2.5" fill="#ea4b71" />
+                       <path d="M6.5 12h2M13.5 11.5l2.5-3M13.5 12.5l2.5 3" stroke="#ea4b71" strokeWidth="1.5" strokeLinecap="round" />
+                    </svg>
+                 </div>
+              </div>
+            </div>
+
+            {/* Make Icon (Inner Orbit) */}
+            <div className="orbit-circle w-[55%] h-[55%] border-none rotating" style={{ '--duration': '22s' } as React.CSSProperties}>
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 counter-rotating" style={{ '--duration': '22s' } as React.CSSProperties}>
+                 <div className="w-16 h-16 bg-[#7b2cbf] rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(123,44,191,0.5)] border border-white/20 p-3.5 hover:scale-110 transition-transform cursor-pointer">
+                    <svg viewBox="0 0 100 100" fill="white" className="w-full h-full">
+                       <rect x="15" y="32" width="18" height="48" rx="6" transform="rotate(-15 24 56)" />
+                       <rect x="41" y="26" width="18" height="48" rx="6" />
+                       <rect x="67" y="26" width="18" height="48" rx="6" />
                     </svg>
                  </div>
               </div>
             </div>
 
             {/* Central Engine */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-gradient-to-br from-[#5a16dd] via-[#6b27ed] to-indigo-800 rounded-3xl flex items-center justify-center shadow-[0_0_60px_rgba(90,22,221,0.4)] z-10 border border-white/20">
-              <div className="flex flex-col items-center">
-                <div className="text-5xl font-black text-white italic tracking-tighter">T</div>
-              </div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-28 bg-gradient-to-br from-[#5a16dd] via-[#6b27ed] to-indigo-800 rounded-3xl flex items-center justify-center shadow-[0_0_60px_rgba(90,22,221,0.6)] z-10 border border-white/20">
+              <div className="text-6xl font-black text-white italic tracking-tighter drop-shadow-lg">T</div>
               <div className="absolute inset-0 rounded-3xl border-2 border-white/10 animate-pulse"></div>
             </div>
           </div>

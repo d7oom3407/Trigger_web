@@ -46,7 +46,8 @@ const AboutSection: React.FC<Props> = ({ t, lang }) => {
             {t.values.map((value: any, i: number) => (
               <div key={i} className="glass-card p-10 rounded-[40px] border-white/5 hover:border-[#5a16dd]/30 transition-all group">
                 <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                  {i === 0 ? '🇸🇦' : i === 1 ? '💻' : '🤝'}
+                  {/* Updated Icons: 0-Stability (Wrench), 1-Results (Chart), 2-Local (Flag) */}
+                  {i === 0 ? '🛠️' : i === 1 ? '📈' : '🇸🇦'}
                 </div>
                 <h4 className="text-xl font-black text-white mb-4 italic uppercase">{value.title}</h4>
                 <p className="text-white/40 text-sm leading-relaxed group-hover:text-white/60 transition-colors">

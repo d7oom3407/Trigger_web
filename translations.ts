@@ -13,7 +13,7 @@ export const translations = {
     hero: {
       title: 'Stop Losing Revenue to Manual Tasks',
       desc: 'We architect industrial-grade AI workflows that function as your silent digital workforce. Scalable, secure, and integrated with your local Saudi ecosystem.',
-      ctaPrimary: 'Audit My Workflow',
+      ctaPrimary: 'Start Improving Your Workflow',
       ctaSecondary: 'View Success Stories'
     },
     projectsPage: {
@@ -48,7 +48,7 @@ export const translations = {
           name: 'Al-Tairan Smart Booking Engine',
           description: 'A comprehensive platform for travel agencies featuring an AI-powered "Smart Assistant" that designs itineraries and manages bookings 24/7.',
           tech: ['Gemini AI', 'Node.js', 'React'],
-          url: 'https://al-tairan-travel-693041094858.us-west1.run.app/',
+          url: 'https://service-693041094858.us-west1.run.app/',
           metrics: [
             { label: 'Booking Speed', value: '< 2 Mins' },
             { label: 'User Retention', value: '+45%' },
@@ -78,9 +78,9 @@ export const translations = {
       title: 'Engineered for Reliability',
       subtitle: 'Why top firms trust Trigger',
       items: [
-        { title: 'Data Sovereignty', desc: 'We prioritize local data handling and encryption standards compatible with regional regulations.' },
-        { title: 'Scalable Logic', desc: 'Our solutions aren\'t "quick fixes". We build infrastructure that grows from 10 to 10,000 tasks/day.' },
-        { title: 'Human-in-the-Loop', desc: 'We design systems where AI handles the drudgery while your team maintains final oversight.' }
+        { title: 'Control is Yours', desc: 'We design systems to serve your team, not replace them. You stay the decision maker.' },
+        { title: 'Start Small, Scale Big', desc: 'We solve one problem first, then expand step-by-step without complex changes.' },
+        { title: 'Data Ownership', desc: 'Your data stays in your environment. We work according to local standards from day one.' }
       ]
     },
     projects: {
@@ -128,55 +128,55 @@ export const translations = {
       success: 'Diagnostic Request Received. We will reach out shortly.'
     },
     howWeBuild: {
-      title: 'The Trigger Engineering Protocol',
-      subtitle: 'How we build high-availability solutions',
-      desc: 'We don\'t use templates. We use a rigorous 4-stage engineering protocol to ensure your automation never fails.',
+      title: 'How we work step-by-step',
+      subtitle: 'Our Methodology',
+      desc: 'We don\'t use templates. We understand your business, solve its core issues, and build a system that truly serves you.',
       sections: [
         {
           id: '01',
-          title: 'Operational Diagnostic',
-          desc: 'We map every manual click and data movement in your company to find the "Leakage Points" where time and money are lost.',
-          details: ['Process Mapping', 'ROI Calculation', 'Leakage Audit']
+          title: 'Understand your work first',
+          desc: 'We review your current processes to identify where time is wasted, where errors happen, and what can be removed.',
+          details: ['Process Review', 'Waste Audit', 'Time Analysis']
         },
         {
           id: '02',
-          title: 'Workflow Architecture',
-          desc: 'We design a technical blueprint that integrates with your existing tech stack (SAP, Oracle, Salla, HubSpot) without friction.',
-          details: ['ERD Diagrams', 'API Logic', 'Security Protocol']
+          title: 'Design the right solution',
+          desc: 'We map out a new, simpler workflow that works with your existing tools without disrupting your team\'s style.',
+          details: ['Workflow Mapping', 'Tool Integration', 'Logic Design']
         },
         {
           id: '03',
-          title: 'Stress-Tested Build',
-          desc: 'Our bots are built to handle edge cases and errors gracefully. We test them against real-world traffic before go-live.',
-          details: ['Edge-case Testing', 'Error Handling', 'Live Sync']
+          title: 'Build and test before use',
+          desc: 'We implement the solution in a test environment with real scenarios to ensure stability before final adoption.',
+          details: ['Live Testing', 'Edge Cases', 'Error Handling']
         },
         {
           id: '04',
-          title: 'Managed Evolution',
-          desc: 'Business changes, and so should your bots. We provide ongoing monitoring and iterative scaling for all deployed systems.',
-          details: ['Active Monitoring', 'System Scaling', 'Feature Sprints']
+          title: 'Evolve as you grow',
+          desc: 'Business changes? The system changes with you. We update and scale without starting from scratch.',
+          details: ['Managed Scaling', 'Active Updates', 'Performance Tuning']
         }
       ],
-      footer: 'Every workflow is custom-built, code-reviewed, and stress-tested.'
+      footer: 'Every custom workflow is designed, tested, and optimized for your specific needs.'
     },
     aboutUs: {
-      title: 'Eliminating the "Manual" Tax',
+      title: 'Stop wasting team time on manual work',
       subtitle: 'Why we exist',
-      desc: 'Trigger was founded on a single premise: manual data entry is a tax on human potential. We are a Saudi agency of automation architects dedicated to returning that potential to your business.',
+      desc: 'Too much of your team\'s time is wasted on data entry, manual follow-ups, and moving info between systems. We help you turn this repetitive work into automated systems so your team can focus on what matters.',
       mission: {
-        title: 'Our Purpose',
-        text: 'To convert disorganized manual operations into high-speed digital assets.'
+        title: 'What we achieve for you',
+        text: 'Reduce manual tasks, eliminate errors, and increase speed with systems that fit your daily workflow.'
       },
       vision: {
-        title: 'Our Horizon',
-        text: 'To be the standard-setter for AI operational excellence in the MENA region.'
+        title: 'What we believe in',
+        text: 'The best system makes work easier without complicating life or forcing sudden changes on your team.'
       },
       values: [
-        { title: 'Local Integration', text: 'Specialized in the nuances of the Saudi market, from Salla/Zid to localized payment gateways.' },
-        { title: 'Zero Fluff', text: 'We talk ROI, not hype. If automation doesn\'t pay for itself in 3 months, we don\'t build it.' },
-        { title: 'Technical Rigor', text: 'Hybrid approach combining the speed of low-code with the power of custom Python/AI.' }
+        { title: 'Stable from day one', text: 'We don\'t just set up a system and leave. We test it on real cases to ensure it runs stably from the start.' },
+        { title: 'We measure by results', text: 'If a system doesn\'t save time or reduce costs, it has no value. We focus on clear, tangible outcomes.' },
+        { title: 'We know the market', text: 'We understand the systems and payment gateways that matter in the local Saudi and GCC markets.' }
       ],
-      whyTitle: 'The Trigger Advantage',
+      whyTitle: 'Why is Trigger different?',
       points: [
         'Saudi Engineering Standards',
         'Direct n8n & Make Platinum Expertise',
@@ -233,10 +233,10 @@ export const translations = {
       demo: 'احجز جلسة'
     },
     hero: {
-      title: 'توقف عن إهدار أرباحك في مهام يدوية',
-      desc: 'نحن نصمم تدفقات عمل بالذكاء الاصطناعي تعمل كقوة عاملة رقمية صامتة. حلولنا قابلة للتوسع، آمنة، ومتكاملة مع النظام التقني السعودي المحلي.',
-      ctaPrimary: 'دقق في سير عملي',
-      ctaSecondary: 'شاهد قصص النجاح'
+      title: 'خلّي الشغل يمشي لوحده، وفريقك يشتغل بذكاء',
+      desc: 'نحوّل الأعمال المتكررة والمُرهِقة إلى أنظمة ذكية تعمل تلقائيًا، عشان تقلّ الأخطاء، توفّر وقت فريقك، وتزيد إنتاجيتك — بدون تغيير أدواتك الحالية.',
+      ctaPrimary: 'ابدأ بتحسين شغلك',
+      ctaSecondary: 'شوف أمثلة حقيقية'
     },
     projectsPage: {
       badge: 'دراسات الحالة',
@@ -270,7 +270,7 @@ export const translations = {
           name: 'منصة الطيران للسفر الذكية',
           description: 'منصة متكاملة لوكالات السفر تعتمد على "مساعد أجنحة النيل الذكي". يتيح النظام تخطيط مسارات رحلات مخصصة بالذكاء الاصطناعي، وإدارة الحجوزات الفورية للفنادق والطيران، مع دعم فني مؤتمت على مدار الساعة.',
           tech: ['Gemini AI', 'Node.js', 'React', 'Live APIs'],
-          url: 'https://al-tairan-travel-693041094858.us-west1.run.app/',
+          url: 'https://service-693041094858.us-west1.run.app/',
           metrics: [
             { label: 'سرعة الحجز', value: 'أقل من دقيقتين' },
             { label: 'رضا العملاء', value: '٩٥٪' },
@@ -300,9 +300,18 @@ export const translations = {
       title: 'هندسة صُممت لتدوم',
       subtitle: 'لماذا تختار الشركات الكبرى "تريجر"؟',
       items: [
-        { title: 'سيادة البيانات', desc: 'نلتزم بأعلى معايير تشفير البيانات والتعامل معها وفقاً للأنظمة واللوائح المحلية.' },
-        { title: 'منطق قابل للتوسع', desc: 'حلولنا ليست "ترقيعات مؤقتة"، بل بنية تحتية تنمو من ١٠ مهام إلى ١٠,٠٠٠ مهمة يومياً.' },
-        { title: 'البشر في القيادة', desc: 'نصمم أنظمة يتولى فيها الذكاء الاصطناعي الأعباء، بينما يحتفظ فريقك بالإشراف النهائي.' }
+        { 
+          title: 'السيطرة بيدك، مو النظام', 
+          desc: 'نصمّم الأنظمة عشان تخدم فريقك، مو تستبدله. كل شيء واضح، قابل للتعديل، وأنت دايم صاحب القرار.' 
+        },
+        { 
+          title: 'نبدأ صغير… ونكبر معك', 
+          desc: 'نحل مشكلة وحدة أولاً، وبعدها نوّسع الحل خطوة بخطوة بدون تعقيد أو تغييرات مفاجئة في طريقة شغلك.' 
+        },
+        { 
+          title: 'بياناتك ملكك', 
+          desc: 'بياناتك ما تطلع من بيئتك، ونشتغل وفق الأنظمة المحلية بأعلى مستوى أمان من أول يوم.' 
+        }
       ]
     },
     projects: {
@@ -350,55 +359,55 @@ export const translations = {
       success: 'تم استلام طلب التشخيص. سيتواصل معك أحد مهندسينا قريباً.'
     },
     howWeBuild: {
-      title: 'بروتوكول تريجر الهندسي',
-      subtitle: 'كيف نبني حلولاً عالية التوافر؟',
-      desc: 'نحن لا نستخدم قوالب جاهزة. نتبع بروتوكولاً هندسياً صارماً من ٤ مراحل لضمان عدم توقف الأتمتة أبداً.',
+      title: 'كيف نشتغل معك خطوة بخطوة',
+      subtitle: 'وش هذا القسم؟',
+      desc: 'ما نركّب حلول جاهزة. نفهم شغلك، نحل مشاكله، ونبني نظام يخدمك فعليًا.',
       sections: [
         {
           id: '٠١',
-          title: 'التشخيص التشغيلي',
-          desc: 'نرسم خريطة لكل نقرة وحركة بيانات في شركتك لتحديد "نقاط التسريب" حيث يضيع الوقت والمال.',
-          details: ['رسم العمليات', 'حساب العائد ROI', 'تدقيق الهدر']
+          title: 'نفهم شغلك أولاً',
+          desc: 'نراجع طريقة عملك الحالية، نحدد وين يضيع الوقت، وين تصير الأخطاء، وأي خطوة ممكن تتبسط أو تتشال بالكامل.',
+          details: ['مراجعة العمليات', 'تحديد الهدر', 'تحليل الوقت']
         },
         {
           id: '٠٢',
-          title: 'هندسة التدفق',
-          desc: 'نصمم مخططاً تقنياً يتكامل مع أدواتك الحالية (SAP, سلة, HubSpot) بدون أي احتكاك أو تعقيد.',
-          details: ['مخططات ERD', 'منطق الـ API', 'بروتوكول الأمان']
+          title: 'نصمّم الحل المناسب لك',
+          desc: 'بعد ما نفهم شغلك، نرسم طريقة جديدة أبسط وأسرع تشتغل مع أدواتك الحالية بدون ما نغيّر أسلوب فريقك.',
+          details: ['رسم التدفقات', 'تكامل الأدوات', 'تصميم المنطق']
         },
         {
           id: '٠٣',
-          title: 'البناء تحت الضغط',
-          desc: 'تُبنى أنظمتنا لتتعامل مع الأخطاء بذكاء. نختبر الحلول ببيانات حقيقية قبل الاعتماد النهائي.',
-          details: ['اختبار الحالات النادرة', 'معالجة الأخطاء الذكية', 'مزامنة حية']
+          title: 'نبني ونختبر قبل التطبيق',
+          desc: 'نطبّق الحل بشكل تجريبي، نختبره في سيناريوهات حقيقية، ونتأكد إنه ثابت قبل ما يعتمد رسميًا في شغلك.',
+          details: ['اختبار حي', 'حالات نادرة', 'معالجة الأخطاء']
         },
         {
           id: '٠٤',
-          title: 'التطور المدار',
-          desc: 'العمل يتغير، لذا يجب أن تتغير الروبوتات أيضاً. نوفر مراقبة مستمرة وتوسيعاً دورياً لكل الأنظمة.',
-          details: ['مراقبة نشطة', 'توسيع الأنظمة', 'تحديثات دورية']
+          title: 'نطوّره مع نمو شغلك',
+          desc: 'شغلك يتغير؟ النظام يتغير معك. نعدّل، نوسّع، ونحسّن بدون ما نعيد البناء من الصفر.',
+          details: ['توسيع الأنظمة', 'تحديثات نشطة', 'تحسين الأداء']
         }
       ],
       footer: 'كل تدفق عمل يُبنى خصيصاً، يُراجع برمجياً، ويُختبر تحت الضغط.'
     },
     aboutUs: {
-      title: 'إلغاء "ضريبة العمل اليدوي"',
+      title: 'أوقف هدر وقت فريقك في الشغل اليدوي',
       subtitle: 'لماذا نحن هنا؟',
-      desc: 'تأسست تريجر على مبدأ واحد: إدخال البيانات يدوياً هو ضريبة على الإمكانات بشرية. نحن وكالة سعودية من مهندسي الأتمتة مكرسون لاستعادة تلك الإمكانات لشركتك.',
+      desc: 'كثير من وقت فريقك يضيع في إدخال بيانات، متابعة يدوية، ونقل معلومات بين الأنظمة. نحن نساعدك تحوّل هالشغل المتكرر إلى أنظمة تشتغل تلقائيًا وتخلّي فريقك يركّز على المهم.',
       mission: {
-        title: 'هدفنا',
-        text: 'تحويل العمليات اليدوية المشتتة إلى أصول رقمية فائقة السرعة.'
+        title: 'وش نحقق لك',
+        text: 'نقلّل الشغل اليدوي، نقل الأخطاء، ونزيد سرعة الإنجاز بأنظمة تناسب شغلك اليومي.'
       },
       vision: {
-        title: 'رؤيتنا',
-        text: 'أن نكون المعيار الأول للتميز التشغيلي بالذكاء الاصطناعي في المنطقة.'
+        title: 'وش نؤمن فيه',
+        text: 'إن أفضل نظام هو اللي يسهّل الشغل بدون ما يعقّد حياة الفريق أو يفرض تغييرات مفاجئة.'
       },
       values: [
-        { title: 'تكامل محلي', text: 'متخصصون في تفاصيل السوق السعودي، من سلة وزد إلى بوابات الدفع المحلية.' },
-        { title: 'تركيز على النتائج', text: 'نتحدث بلغة الأرقام. إذا لم تكن الأتمتة ستغطي تكلفتها خلال ٣ أشهر، فلن نبنيها.' },
-        { title: 'صرامة تقنية', text: 'نهج هجين يجمع بين سرعة الأدوات المنخفضة البرمجة وقوة الـ Python والذكاء الاصطناعي.' }
+        { title: 'حل ثابت من أول مرة', text: 'ما نركّب نظام ويمشي وخلاص. نختبره على حالات حقيقية عشان يشتغل بثبات من أول يوم.' },
+        { title: 'نقيس الشغل بالأرقام', text: 'إذا النظام ما وفّر وقت أو قلّل تكلفة فهو ما له قيمة. نركّز على نتيجة واضحة تقدر تشوفها وتحسّ فيها.' },
+        { title: 'فاهمين السوق السعودي', text: 'نعرف الأنظمة، نعرف بوابات الدفع، ونشتغل بحلول تناسب واقع السوق المحلي.' }
       ],
-      whyTitle: 'امتياز تريجر',
+      whyTitle: 'ليش Trigger مختلفة؟',
       points: [
         'معايير هندسية سعودية',
         'خبرة بلاتينية في n8n و Make',
