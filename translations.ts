@@ -40,19 +40,19 @@ export const translations = {
           ]
         },
         {
-          id: 'logistics',
+          id: 'murasala',
           featured: false,
-          shortName: 'LOGI-SYNC',
-          image: 'https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=2075&auto=format&fit=crop', 
-          category: 'Logistics / Salla Integration',
-          name: 'Smart Courier Dispatcher',
-          description: 'Automated sync between local e-commerce stores (Salla/Zid) and courier fleets. Zero manual data entry for shipping labels.',
-          tech: ['n8n', 'Python', 'Webhooks'],
+          shortName: 'MURASALA',
+          image: 'https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=2070&auto=format&fit=crop', 
+          category: 'E-commerce / AI Email Automation',
+          name: 'Murasala AI Response Engine',
+          description: 'AI that drafts and sends email responses aligned with your brand voice using your team\'s previous conversations. Integrated with Gmail and Zoho, supporting authentic Arabic & English.',
+          tech: ['LLM Orchestration', 'Gmail API', 'Zoho Auth'],
           metrics: [
-            { label: 'Error Rate', value: '0.01%' },
-            { label: 'Time Saved', value: '18h/week' },
-            { label: 'Labels/Min', value: '450+' },
-            { label: 'Auto-Sync', value: '100%' }
+            { label: 'Setup Time', value: '5 Mins' },
+            { label: 'Response Speed', value: 'Instant' },
+            { label: 'Draft Accuracy', value: '98%' },
+            { label: 'Native Support', value: 'Ar/En' }
           ]
         },
         {
@@ -89,12 +89,12 @@ export const translations = {
       items: [
         {
           id: '01',
-          tag: 'E-commerce (Salla)',
-          title: 'Auto-Shipping Sync',
-          image: 'https://images.unsplash.com/photo-1566576721346-d4a3b4eaad5b?auto=format&fit=crop&q=80&w=600',
-          desc: 'We connected Salla directly to the shipping company. No more manual entry of customer addresses—orders fly to the courier instantly.',
-          value: 'Zero shipping errors and saved 18 hours of manual typing weekly.',
-          tech: ['n8n', 'Salla']
+          tag: 'E-commerce / Email',
+          title: 'Murasala AI Emailer',
+          image: 'https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&q=80&w=600',
+          desc: 'Automated email response system that learns from your style and replies to customers instantly in Arabic and English.',
+          value: 'Reduced customer support response time by 90% while maintaining brand tone.',
+          tech: ['AI Agents', 'Gmail']
         },
         {
           id: '02',
@@ -261,19 +261,19 @@ export const translations = {
           ]
         },
         {
-          id: 'logistics',
+          id: 'murasala',
           featured: false,
-          shortName: 'لوجي-سينك',
-          image: 'https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=2075&auto=format&fit=crop',
-          category: 'لوجستيات / ربط سلة',
-          name: 'نظام توجيه الشحن الذكي',
-          description: 'ربط آلي بين المتاجر الإلكترونية (سلة/زد) وأساطيل الشحن. صفر إدخال يدوي لبيانات البوليصات والعملاء.',
-          tech: ['n8n', 'Python', 'Webhooks'],
+          shortName: 'مُراسلة',
+          image: 'https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=2070&auto=format&fit=crop',
+          category: 'تجارة إلكترونية / أتمتة البريد بالذكاء الاصطناعي',
+          name: 'نظام مُراسلة للردود الذكية',
+          description: 'نظام ذكاء اصطناعي يصيغ ويرسل ردود البريد الإلكتروني بما يتوافق مع هوية علامتك التجارية، مستفيداً من محادثات فريقك السابقة. جاهز للعمل في ٥ دقائق مع Gmail و Zoho ودعم عربي أصيل.',
+          tech: ['LLM Orchestration', 'Gmail API', 'Zoho'],
           metrics: [
-            { label: 'نسبة الخطأ', value: '٠.٠١٪' },
-            { label: 'توفير الوقت', value: '١٨ ساعة/أسبوع' },
-            { label: 'بوليصة/دقيقة', value: '٤٥٠+' },
-            { label: 'مزامنة آلي', value: '١٠٠٪' }
+            { label: 'وقت الإعداد', value: '٥ دقائق' },
+            { label: 'سرعة الرد', value: 'فوري' },
+            { label: 'دقة المسودات', value: '٩٨٪' },
+            { label: 'دعم اللغات', value: 'عربي/إنجليزي' }
           ]
         },
         {
@@ -310,12 +310,12 @@ export const translations = {
       items: [
         {
           id: '٠١',
-          tag: 'سلة / شحن',
-          title: 'ربط سلة مع الشحن',
-          image: 'https://images.unsplash.com/photo-1566576721346-d4a3b4eaad5b?auto=format&fit=crop&q=80&w=600',
-          desc: 'بدل ما تنقل بيانات العميل لشركة الشحن يدوياً، ربطنا المتجر وصارت الطلبات تطير للمناديب تلقائياً بمجرد الدفع.',
-          value: 'وفّرنا ١٨ ساعة شغل يدوي أسبوعياً وصفرنا أخطاء الشحن تماماً.',
-          tech: ['n8n', 'Salla']
+          tag: 'متاجر / بريد إلكتروني',
+          title: 'نظام مُراسلة الذكي',
+          image: 'https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&q=80&w=600',
+          desc: 'رد أسرع، وحافظ على هويتك. نظام يصيغ ردود البريد الإلكتروني بدقة وسرعة لخدمة عملاء المتاجر آلياً.',
+          value: 'توفير ٧٠٪ من وقت فريق الدعم وتحسين سرعة الرد لثوانٍ معدودة.',
+          tech: ['AI Agents', 'Gmail']
         },
         {
           id: '٠٢',

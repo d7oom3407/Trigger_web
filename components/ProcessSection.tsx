@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 interface Props {
@@ -20,17 +21,17 @@ const ProcessSection: React.FC<Props> = ({ t, lang }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
           {t.sections.map((section: any, idx: number) => (
-            <div key={idx} className="glass-card p-10 rounded-[40px] border-white/5 group hover:border-violet-500/30 transition-all duration-500 relative overflow-hidden">
+            <div key={idx} className="glass-card p-10 rounded-[40px] border-white/5 group hover:border-[#5a16dd]/30 transition-all duration-500 relative overflow-hidden">
               <div className="absolute top-0 right-0 p-8 opacity-5 text-8xl font-black italic translate-x-4 -translate-y-4 group-hover:translate-x-2 transition-transform">
                 {section.id}
               </div>
               
               <div className="relative z-10">
-                <div className="w-14 h-14 bg-violet-600 rounded-2xl flex items-center justify-center text-white font-black text-xl mb-8 shadow-xl shadow-violet-900/40">
+                <div className="w-14 h-14 bg-[#5a16dd] rounded-2xl flex items-center justify-center text-white font-black text-xl mb-8 shadow-xl shadow-[#5a16dd]/40">
                   {section.id}
                 </div>
                 
-                <h3 className="text-2xl font-black mb-4 tracking-tight uppercase italic text-white group-hover:text-violet-400 transition-colors">
+                <h3 className="text-2xl font-black mb-4 tracking-tight uppercase italic text-white group-hover:text-[#6b27ed] transition-colors">
                   {section.title}
                 </h3>
                 

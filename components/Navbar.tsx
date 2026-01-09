@@ -20,10 +20,10 @@ const Navbar: React.FC<Props> = ({ lang, toggleLang, setView, currentView }) => 
           onClick={() => setView('home')}
           className="flex items-center gap-2 hover:opacity-80 transition-opacity"
         >
-          <div className="w-9 h-9 bg-violet-600 rounded-lg flex items-center justify-center font-black text-white italic text-lg">
+          <div className="w-9 h-9 bg-[#5a16dd] rounded-lg flex items-center justify-center font-black text-white italic text-lg">
             T
           </div>
-          <span className="text-xl font-bold tracking-tighter text-white">Trigger<span className="text-violet-500">.</span></span>
+          <span className="text-xl font-bold tracking-tighter text-white">Trigger<span className="text-[#5a16dd]">.</span></span>
         </button>
         
         <div className="hidden md:flex items-center gap-10 text-base font-bold uppercase tracking-wider">
@@ -56,13 +56,13 @@ const Navbar: React.FC<Props> = ({ lang, toggleLang, setView, currentView }) => 
         <div className="flex items-center gap-2 md:gap-4">
           <button 
             onClick={toggleLang}
-            className="text-sm font-black glass-card px-4 py-2 rounded-xl hover:bg-violet-500/10 transition-colors border-violet-500/20 text-white"
+            className="text-sm font-black glass-card px-4 py-2 rounded-xl hover:bg-[#5a16dd]/10 transition-colors border-[#5a16dd]/20 text-white"
           >
             {lang === 'en' ? 'العربية' : 'EN'}
           </button>
           <button 
             onClick={() => setView('contact')}
-            className="hidden sm:block bg-violet-600 hover:bg-violet-700 text-white text-base font-black px-7 py-3 rounded-lg transition-all hover:scale-105 active:scale-95 shadow-lg shadow-violet-900/40 uppercase italic"
+            className="hidden sm:block bg-[#5a16dd] hover:bg-[#6b27ed] text-white text-base font-black px-7 py-3 rounded-lg transition-all hover:scale-105 active:scale-95 shadow-lg shadow-[#5a16dd]/40 uppercase italic"
           >
             {t.contact}
           </button>

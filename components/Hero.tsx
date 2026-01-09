@@ -43,7 +43,7 @@ const Hero: React.FC<Props> = ({ t, lang, setView }) => {
           <div className={`flex flex-col sm:flex-row items-center gap-5 justify-center ${lang === 'en' ? 'lg:justify-start' : 'lg:justify-start'}`}>
             <button 
               onClick={() => setView('contact')}
-              className="w-full sm:w-auto bg-violet-600 hover:bg-violet-700 text-white font-black px-12 py-6 rounded-xl transition-all hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(139,92,246,0.3)] text-2xl italic uppercase"
+              className="w-full sm:w-auto bg-[#5a16dd] hover:bg-[#6b27ed] text-white font-black px-12 py-6 rounded-xl transition-all hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(90,22,221,0.3)] text-2xl italic uppercase"
             >
               {t.ctaPrimary}
             </button>
@@ -84,7 +84,7 @@ const Hero: React.FC<Props> = ({ t, lang, setView }) => {
 
             <div className="orbit-circle w-[80%] h-[80%] border-none rotating" style={{ '--duration': '18s', animationDirection: 'reverse' } as React.CSSProperties}>
               <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 counter-rotating" style={{ '--duration': '18s', animationDirection: 'reverse' } as React.CSSProperties}>
-                 <div className="w-12 h-12 bg-[#250148] rounded-xl flex items-center justify-center shadow-[0_0_30px_rgba(139,92,246,0.2)] p-2.5 border border-white/10 pointer-events-auto hover:scale-125 transition-transform">
+                 <div className="w-12 h-12 bg-[#1a0033] rounded-xl flex items-center justify-center shadow-[0_0_30px_rgba(90,22,221,0.2)] p-2.5 border border-white/10 pointer-events-auto hover:scale-125 transition-transform">
                     <svg viewBox="0 0 40 40" fill="none" className="w-full h-full">
                        <path d="M20 0C8.954 0 0 8.954 0 20s8.954 20 20 20 20-8.954 20-20S31.046 0 20 0z" fill="#E6E0FF" fillOpacity=".1"/>
                        <path d="M12 12h16v16H12z" fill="#fff"/>
@@ -104,7 +104,7 @@ const Hero: React.FC<Props> = ({ t, lang, setView }) => {
             </div>
 
             {/* Central Engine */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-gradient-to-br from-violet-600 via-violet-500 to-indigo-700 rounded-3xl flex items-center justify-center shadow-[0_0_60px_rgba(139,92,246,0.4)] z-10 border border-white/20">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-gradient-to-br from-[#5a16dd] via-[#6b27ed] to-indigo-800 rounded-3xl flex items-center justify-center shadow-[0_0_60px_rgba(90,22,221,0.4)] z-10 border border-white/20">
               <div className="flex flex-col items-center">
                 <div className="text-5xl font-black text-white italic tracking-tighter">T</div>
               </div>

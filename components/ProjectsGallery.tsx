@@ -8,10 +8,10 @@ interface Props {
 
 const ProjectsGallery: React.FC<Props> = ({ t, lang }) => {
   return (
-    <section className="py-24 px-6 relative overflow-hidden bg-black transition-colors">
+    <section className="py-24 px-6 relative overflow-hidden bg-[#292929] transition-colors">
       <div className="max-w-7xl mx-auto">
         <header className="mb-24 text-center md:text-start">
-          <div className="inline-block px-4 py-1.5 rounded-full bg-violet-600/10 border border-violet-500/30 text-violet-400 text-[10px] font-black uppercase tracking-[0.3em] mb-6">
+          <div className="inline-block px-4 py-1.5 rounded-full bg-[#5a16dd]/10 border border-[#5a16dd]/30 text-[#6b27ed] text-[10px] font-black uppercase tracking-[0.3em] mb-6">
             {t.badge}
           </div>
           <h2 className="text-5xl md:text-7xl font-black mb-8 italic tracking-tighter uppercase leading-[0.9] text-white">
@@ -29,7 +29,7 @@ const ProjectsGallery: React.FC<Props> = ({ t, lang }) => {
               className="group flex flex-col h-full"
             >
               {/* Image Container - Full Coverage */}
-              <div className="relative aspect-[16/10] rounded-[40px] overflow-hidden border border-white/10 bg-[#1a1a1e] shadow-2xl group-hover:border-violet-500/50 transition-all duration-700">
+              <div className="relative aspect-[16/10] rounded-[40px] overflow-hidden border border-white/10 bg-[#1e1e1e] shadow-2xl group-hover:border-[#5a16dd]/50 transition-all duration-700">
                 <img 
                   src={project.image} 
                   alt={project.name} 
@@ -45,7 +45,7 @@ const ProjectsGallery: React.FC<Props> = ({ t, lang }) => {
                 {/* Floating Category Badge */}
                 <div className="absolute top-6 right-6 z-20">
                    <div className="bg-black/60 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10 shadow-xl">
-                      <span className="text-[10px] font-black text-violet-400 uppercase tracking-[0.2em]">{project.category.split('/')[0]}</span>
+                      <span className="text-[10px] font-black text-[#6b27ed] uppercase tracking-[0.2em]">{project.category.split('/')[0]}</span>
                    </div>
                 </div>
               </div>
@@ -53,7 +53,7 @@ const ProjectsGallery: React.FC<Props> = ({ t, lang }) => {
               {/* Information Section */}
               <div className="pt-10 px-2 flex-grow flex flex-col">
                 <div className="mb-6 text-right">
-                  <span className="text-[11px] font-black uppercase tracking-[0.3em] text-violet-400 block mb-2">
+                  <span className="text-[11px] font-black uppercase tracking-[0.3em] text-[#6b27ed] block mb-2">
                     {project.category}
                   </span>
                   <h4 className="text-3xl md:text-5xl font-black text-white italic uppercase tracking-tighter leading-none">
@@ -84,7 +84,7 @@ const ProjectsGallery: React.FC<Props> = ({ t, lang }) => {
                       href={project.url} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="w-full bg-violet-600 text-white font-black px-12 py-5 rounded-2xl transition-all hover:bg-violet-700 hover:scale-[1.02] active:scale-95 shadow-2xl text-xl italic uppercase flex items-center justify-center gap-4 group"
+                      className="w-full bg-[#5a16dd] text-white font-black px-12 py-5 rounded-2xl transition-all hover:bg-[#6b27ed] hover:scale-[1.02] active:scale-95 shadow-2xl text-xl italic uppercase flex items-center justify-center gap-4 group"
                     >
                       {lang === 'ar' ? 'تشغيل المنصة' : 'Launch Platform'}
                       <span className="text-3xl group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">↗</span>

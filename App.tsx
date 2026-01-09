@@ -55,11 +55,11 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white selection:bg-violet-500 selection:text-white transition-colors duration-300">
+    <div className="min-h-screen bg-[#292929] text-white selection:bg-[#5a16dd] selection:text-white transition-colors duration-300">
       <div className="fixed inset-0 bg-grid pointer-events-none"></div>
       
       {/* Subtle Glows */}
-      <div className="fixed top-[-10%] left-[-10%] w-[50%] h-[50%] bg-violet-900/10 blur-[150px] rounded-full pointer-events-none"></div>
+      <div className="fixed top-[-10%] left-[-10%] w-[50%] h-[50%] bg-[#5a16dd]/10 blur-[150px] rounded-full pointer-events-none"></div>
 
       <Navbar 
         lang={lang} 

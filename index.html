@@ -13,8 +13,9 @@
             theme: {
                 extend: {
                     colors: {
-                        dark: '#000000',
+                        dark: '#292929',
                         light: '#f8fafc',
+                        primary: '#5a16dd',
                     }
                 }
             }
@@ -26,11 +27,11 @@
         body {
             font-family: 'IBM Plex Sans Arabic', sans-serif;
             overflow-x: hidden;
-            background-color: #000;
+            background-color: #292929;
             color: #fff;
         }
         .bg-grid {
-            background-image: radial-gradient(circle at 2px 2px, rgba(139, 92, 246, 0.1) 1px, transparent 0);
+            background-image: radial-gradient(circle at 2px 2px, rgba(90, 22, 221, 0.1) 1px, transparent 0);
             background-size: 40px 40px;
             opacity: 0.2;
         }
@@ -40,7 +41,7 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         .text-gradient {
-            background: linear-gradient(to right, #fff, #8B5CF6);
+            background: linear-gradient(to right, #fff, #5a16dd);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -54,7 +55,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            border: 1px solid rgba(139, 92, 246, 0.15);
+            border: 1px solid rgba(90, 22, 221, 0.15);
             border-radius: 50%;
             pointer-events: none;
         }

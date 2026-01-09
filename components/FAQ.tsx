@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ViewState } from '../App';
 
@@ -32,7 +33,7 @@ const FAQ: React.FC<Props> = ({ t, lang, setView }) => {
         ))}
       </div>
 
-      <div className="mt-20 glass-card rounded-[40px] p-12 bg-gradient-to-br from-violet-600 to-indigo-800 text-center relative overflow-hidden border-none shadow-[0_0_100px_rgba(139,92,246,0.3)]">
+      <div className="mt-20 glass-card rounded-[40px] p-12 bg-gradient-to-br from-[#5a16dd] to-indigo-900 text-center relative overflow-hidden border-none shadow-[0_0_100px_rgba(90,22,221,0.3)]">
         <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid"></div>
         <div className="relative z-10">
           <h3 className="text-4xl md:text-5xl font-black mb-4 italic uppercase tracking-tighter">{t.ctaTitle}</h3>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ViewState } from '../App';
 
@@ -15,10 +16,10 @@ const Footer: React.FC<Props> = ({ t, lang, setView }) => {
           onClick={() => setView('home')}
           className="flex items-center gap-2 mb-8 hover:opacity-80 transition-opacity"
         >
-          <div className="w-10 h-10 bg-violet-600 rounded-xl flex items-center justify-center font-black text-white italic text-xl">
+          <div className="w-10 h-10 bg-[#5a16dd] rounded-xl flex items-center justify-center font-black text-white italic text-xl">
             T
           </div>
-          <span className="text-2xl font-bold tracking-tighter">Trigger<span className="text-violet-500">.</span></span>
+          <span className="text-2xl font-bold tracking-tighter">Trigger<span className="text-[#5a16dd]">.</span></span>
         </button>
         
         <h4 className="text-4xl md:text-5xl font-black max-w-2xl mb-12 leading-tight">
@@ -30,7 +31,7 @@ const Footer: React.FC<Props> = ({ t, lang, setView }) => {
             href={t.socials.linkedin} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="w-12 h-12 glass-card rounded-full flex items-center justify-center cursor-pointer hover:bg-violet-600 hover:border-violet-400/50 transition-all duration-300 group"
+            className="w-12 h-12 glass-card rounded-full flex items-center justify-center cursor-pointer hover:bg-[#5a16dd] hover:border-[#6b27ed]/50 transition-all duration-300 group"
             aria-label="LinkedIn"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:scale-110 transition-transform">
@@ -43,7 +44,7 @@ const Footer: React.FC<Props> = ({ t, lang, setView }) => {
             href={t.socials.instagram} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="w-12 h-12 glass-card rounded-full flex items-center justify-center cursor-pointer hover:bg-violet-600 hover:border-violet-400/50 transition-all duration-300 group"
+            className="w-12 h-12 glass-card rounded-full flex items-center justify-center cursor-pointer hover:bg-[#5a16dd] hover:border-[#6b27ed]/50 transition-all duration-300 group"
             aria-label="Instagram"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:scale-110 transition-transform">
@@ -56,7 +57,7 @@ const Footer: React.FC<Props> = ({ t, lang, setView }) => {
             href={t.socials.x} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="w-12 h-12 glass-card rounded-full flex items-center justify-center cursor-pointer hover:bg-violet-600 hover:border-violet-400/50 transition-all duration-300 group"
+            className="w-12 h-12 glass-card rounded-full flex items-center justify-center cursor-pointer hover:bg-[#5a16dd] hover:border-[#6b27ed]/50 transition-all duration-300 group"
             aria-label="X (Twitter)"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-white group-hover:scale-110 transition-transform">

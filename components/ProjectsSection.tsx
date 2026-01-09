@@ -10,7 +10,7 @@ interface Props {
 
 const ProjectsSection: React.FC<Props> = ({ t, lang, setView }) => {
   return (
-    <section className="py-24 px-6 relative overflow-hidden bg-black">
+    <section className="py-24 px-6 relative overflow-hidden bg-[#292929]">
       <div className="max-w-7xl mx-auto">
         <div className="mb-20 text-center md:text-right">
           <h2 className="text-4xl md:text-6xl font-black mb-8 tracking-tighter uppercase italic text-white">
@@ -20,7 +20,7 @@ const ProjectsSection: React.FC<Props> = ({ t, lang, setView }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
           {t.items.map((project: any, idx: number) => (
-            <div key={idx} className="group flex flex-col bg-[#0a0a0c] border border-white/5 rounded-[40px] overflow-hidden hover:border-violet-500/40 transition-all duration-700 hover:shadow-[0_20px_50px_rgba(139,92,246,0.15)] h-full">
+            <div key={idx} className="group flex flex-col bg-[#1e1e1e] border border-white/5 rounded-[40px] overflow-hidden hover:border-[#5a16dd]/40 transition-all duration-700 hover:shadow-[0_20px_50px_rgba(90,22,221,0.15)] h-full">
               
               {/* Image Area - Clean Full Cover */}
               <div className="relative aspect-[16/10] overflow-hidden bg-white/5">
@@ -35,7 +35,7 @@ const ProjectsSection: React.FC<Props> = ({ t, lang, setView }) => {
                 
                 {/* Badge Overlay - Clean & Floating */}
                 <div className="absolute top-6 right-6 z-20">
-                  <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white bg-violet-600 px-4 py-2 rounded-xl shadow-2xl">
+                  <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white bg-[#5a16dd] px-4 py-2 rounded-xl shadow-2xl">
                     {project.tag}
                   </span>
                 </div>
@@ -44,7 +44,7 @@ const ProjectsSection: React.FC<Props> = ({ t, lang, setView }) => {
               {/* Content Area */}
               <div className="p-8 md:p-10 flex flex-col flex-grow">
                 <div className="relative z-10">
-                  <h3 className="text-2xl md:text-3xl font-black mb-6 tracking-tight uppercase italic text-white group-hover:text-violet-400 transition-colors leading-tight">
+                  <h3 className="text-2xl md:text-3xl font-black mb-6 tracking-tight uppercase italic text-white group-hover:text-[#6b27ed] transition-colors leading-tight">
                     {project.title}
                   </h3>
                   
@@ -55,8 +55,8 @@ const ProjectsSection: React.FC<Props> = ({ t, lang, setView }) => {
 
                 {/* Result Box */}
                 <div className="mt-auto pt-8 border-t border-white/5">
-                  <div className="bg-violet-600/10 p-6 rounded-3xl border border-violet-500/20 group-hover:bg-violet-600/20 transition-all">
-                    <span className="text-[10px] font-black uppercase tracking-widest text-violet-400 block mb-2 opacity-70">
+                  <div className="bg-[#5a16dd]/10 p-6 rounded-3xl border border-[#5a16dd]/20 group-hover:bg-[#5a16dd]/20 transition-all">
+                    <span className="text-[10px] font-black uppercase tracking-widest text-[#6b27ed] block mb-2 opacity-70">
                       {lang === 'ar' ? 'النتيجة المحققة' : 'The Result'}
                     </span>
                     <span className="text-lg font-black text-white italic leading-tight block">
@@ -72,7 +72,7 @@ const ProjectsSection: React.FC<Props> = ({ t, lang, setView }) => {
         <div className="text-center relative z-10 flex flex-col items-center gap-8">
           <div className="inline-flex flex-col items-center gap-4 px-12 py-8 rounded-[40px] glass-card shadow-2xl">
             <div className="text-5xl font-black text-white italic tracking-tighter mb-2">
-              30<span className="text-violet-500">+</span>
+              30<span className="text-[#5a16dd]">+</span>
             </div>
             <p className="text-white/60 text-lg font-bold italic uppercase tracking-wide">
               {t.footer}
@@ -81,7 +81,7 @@ const ProjectsSection: React.FC<Props> = ({ t, lang, setView }) => {
 
           <button 
             onClick={() => setView?.('projects')}
-            className="group flex items-center gap-4 bg-violet-600 hover:bg-violet-700 px-10 py-5 rounded-2xl transition-all hover:scale-105 shadow-xl shadow-violet-500/20"
+            className="group flex items-center gap-4 bg-[#5a16dd] hover:bg-[#6b27ed] px-10 py-5 rounded-2xl transition-all hover:scale-105 shadow-xl shadow-[#5a16dd]/20"
           >
             <span className="text-xl font-black italic uppercase tracking-widest text-white">
               {lang === 'ar' ? 'عرض جميع الحلول' : 'Explore All Solutions'}
