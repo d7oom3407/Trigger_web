@@ -22,37 +22,38 @@ export const translations = {
       desc: 'Explore how we transform complex manual operations into automated competitive advantages for regional leaders.',
       projects: [
         {
-          id: 'travel',
-          featured: true,
-          shortName: 'AL-TAIRAN',
-          image: 'https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=2070&auto=format&fit=crop', 
-          bgColor: 'from-blue-600/30 to-black',
-          category: 'Travel & Tourism / AI Platform',
-          name: 'Al-Tairan Smart Booking Engine',
-          description: 'A comprehensive white-label platform for travel agencies. It features an AI-powered "Smart Assistant" that designs full itineraries, manages hotel/flight bookings, and integrates 24/7 automated customer support.',
-          tech: ['Gemini AI', 'Node.js', 'React', 'Live Booking APIs'],
-          url: 'https://al-tairan-travel-693041094858.us-west1.run.app/',
-          metrics: [
-            { label: 'Booking Speed', value: '< 2 Mins' },
-            { label: 'User Retention', value: '+45%' },
-            { label: 'Ops Reduction', value: '70%' },
-            { label: 'API Health', value: '99.9%' }
-          ]
-        },
-        {
           id: 'murasala',
-          featured: false,
+          featured: true,
           shortName: 'MURASALA',
           image: 'https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=2070&auto=format&fit=crop', 
           category: 'E-commerce / AI Email Automation',
           name: 'Murasala AI Response Engine',
           description: 'AI that drafts and sends email responses aligned with your brand voice using your team\'s previous conversations. Integrated with Gmail and Zoho, supporting authentic Arabic & English.',
           tech: ['LLM Orchestration', 'Gmail API', 'Zoho Auth'],
+          url: 'https://morasla.vercel.app/',
           metrics: [
             { label: 'Setup Time', value: '5 Mins' },
             { label: 'Response Speed', value: 'Instant' },
             { label: 'Draft Accuracy', value: '98%' },
             { label: 'Native Support', value: 'Ar/En' }
+          ]
+        },
+        {
+          id: 'travel',
+          featured: false,
+          shortName: 'AL-TAIRAN',
+          image: 'https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=2070&auto=format&fit=crop', 
+          bgColor: 'from-blue-600/30 to-black',
+          category: 'Travel & Tourism / AI Platform',
+          name: 'Al-Tairan Smart Booking Engine',
+          description: 'A comprehensive platform for travel agencies featuring an AI-powered "Smart Assistant" that designs itineraries and manages bookings 24/7.',
+          tech: ['Gemini AI', 'Node.js', 'React'],
+          url: 'https://al-tairan-travel-693041094858.us-west1.run.app/',
+          metrics: [
+            { label: 'Booking Speed', value: '< 2 Mins' },
+            { label: 'User Retention', value: '+45%' },
+            { label: 'Ops Reduction', value: '70%' },
+            { label: 'API Health', value: '99.9%' }
           ]
         },
         {
@@ -243,8 +244,25 @@ export const translations = {
       desc: 'اكتشف كيف نحول العمليات اليدوية المعقدة إلى مزايا تنافسية مؤتمتة لقادة السوق في المنطقة.',
       projects: [
         {
-          id: 'travel',
+          id: 'murasala',
           featured: true,
+          shortName: 'مُراسلة',
+          image: 'https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=2070&auto=format&fit=crop',
+          category: 'تجارة إلكترونية / أتمتة البريد بالذكاء الاصطناعي',
+          name: 'نظام مُراسلة للردود الذكية',
+          description: 'نظام ذكاء اصطناعي يصيغ ويرسل ردود البريد الإلكتروني بما يتوافق مع هوية علامتك التجارية، مستفيداً من محادثات فريقك السابقة. جاهز للعمل في ٥ دقائق مع Gmail و Zoho ودعم عربي أصيل.',
+          tech: ['LLM Orchestration', 'Gmail API', 'Zoho'],
+          url: 'https://morasla.vercel.app/',
+          metrics: [
+            { label: 'وقت الإعداد', value: '٥ دقائق' },
+            { label: 'سرعة الرد', value: 'فوري' },
+            { label: 'دقة المسودات', value: '٩٨٪' },
+            { label: 'دعم اللغات', value: 'عربي/إنجليزي' }
+          ]
+        },
+        {
+          id: 'travel',
+          featured: false,
           shortName: 'الطيران للسفر',
           image: 'https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=2070&auto=format&fit=crop',
           bgColor: 'from-blue-600/30 to-black',
@@ -258,22 +276,6 @@ export const translations = {
             { label: 'رضا العملاء', value: '٩٥٪' },
             { label: 'كفاءة التشغيل', value: '٧٠٪+' },
             { label: 'صحة الـ API', value: '٩٩.٩٪' }
-          ]
-        },
-        {
-          id: 'murasala',
-          featured: false,
-          shortName: 'مُراسلة',
-          image: 'https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=2070&auto=format&fit=crop',
-          category: 'تجارة إلكترونية / أتمتة البريد بالذكاء الاصطناعي',
-          name: 'نظام مُراسلة للردود الذكية',
-          description: 'نظام ذكاء اصطناعي يصيغ ويرسل ردود البريد الإلكتروني بما يتوافق مع هوية علامتك التجارية، مستفيداً من محادثات فريقك السابقة. جاهز للعمل في ٥ دقائق مع Gmail و Zoho ودعم عربي أصيل.',
-          tech: ['LLM Orchestration', 'Gmail API', 'Zoho'],
-          metrics: [
-            { label: 'وقت الإعداد', value: '٥ دقائق' },
-            { label: 'سرعة الرد', value: 'فوري' },
-            { label: 'دقة المسودات', value: '٩٨٪' },
-            { label: 'دعم اللغات', value: 'عربي/إنجليزي' }
           ]
         },
         {
@@ -429,7 +431,7 @@ export const translations = {
     },
     footer: {
       title: 'تريجر — بناء القوة العاملة الصامتة',
-      copyright: '© 2025 جميع الحقوق محفوظة لشركة مُراسلة .',
+      copyright: '© 2025 جميع الحقوق محفوظة لشركة تريجر .',
       socials: {
         linkedin: 'https://www.linkedin.com/in/trigger-sa-36a3803a3/',
         x: 'https://x.com/Trigger_ksa',
