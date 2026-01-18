@@ -22,8 +22,25 @@ export const translations = {
       desc: 'Explore how we transform complex manual operations into automated competitive advantages for regional leaders.',
       projects: [
         {
-          id: 'murasala',
+          id: 'web-redesign',
           featured: true,
+          shortName: 'TRIGGER WEB',
+          image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=2070&auto=format&fit=crop', 
+          category: 'UI/UX / Website Transformation',
+          name: 'Trigger Web Redesign Portal',
+          description: 'Our specialized arm for redesigning websites with high aesthetic standards. We leverage AI-driven design principles to turn outdated interfaces into stunning, high-conversion digital experiences.',
+          tech: ['AI Design', 'React', 'Framer'],
+          url: 'https://web.triger.cloud',
+          metrics: [
+            { label: 'Visual Impact', value: '10/10' },
+            { label: 'Loading Speed', value: '99+' },
+            { label: 'Mobile SEO', value: '100%' },
+            { label: 'User Retention', value: '+65%' }
+          ]
+        },
+        {
+          id: 'murasala',
+          featured: false,
           shortName: 'MURASALA',
           image: 'https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=2070&auto=format&fit=crop', 
           category: 'E-commerce / AI Email Automation',
@@ -90,6 +107,15 @@ export const translations = {
       items: [
         {
           id: '01',
+          tag: 'Web / Design',
+          title: 'Trigger Web Redesign',
+          image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&q=80&w=600',
+          desc: 'High-conversion website redesign using AI-driven aesthetic principles to elevate brand identity.',
+          value: 'Transformed traditional sites into high-performance digital sales machines.',
+          tech: ['UI/UX', 'AI Graphics']
+        },
+        {
+          id: '02',
           tag: 'E-commerce / Email',
           title: 'Murasala AI Emailer',
           image: 'https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&q=80&w=600',
@@ -98,22 +124,13 @@ export const translations = {
           tech: ['AI Agents', 'Gmail']
         },
         {
-          id: '02',
+          id: '03',
           tag: 'Sales & Service',
           title: '24/7 AI Sales Agent',
           image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=600',
           desc: 'An AI that lives on WhatsApp, answers customer questions instantly, and books meetings for you while you sleep.',
           value: 'Replied to 100% of leads instantly, increasing booked meetings by 3x.',
           tech: ['GPT-4', 'WATI']
-        },
-        {
-          id: '03',
-          tag: 'Operations',
-          title: 'Instant Contracts',
-          image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=600',
-          desc: 'The moment a client pays, the contract is generated, signed, and filed automatically. No human intervention needed.',
-          value: 'Reduced contract turnaround from 2 days to 2 minutes.',
-          tech: ['Make', 'DocuSign']
         }
       ]
     },
@@ -212,7 +229,7 @@ export const translations = {
       title: 'Trigger — Building the Silent Workforce',
       copyright: '© 2025 All rights reserved to Trigger Automation.',
       socials: {
-        linkedin: 'https://www.linkedin.com/in/trigger-sa-36a3803a3/',
+        linkedin: 'https://www.linkedin.com/company/trigger-ksa',
         x: 'https://x.com/Trigger_ksa',
         instagram: 'https://www.instagram.com/trigger_ksa/'
       },
@@ -244,8 +261,25 @@ export const translations = {
       desc: 'اكتشف كيف نحول العمليات اليدوية المعقدة إلى مزايا تنافسية مؤتمتة لقادة السوق في المنطقة.',
       projects: [
         {
-          id: 'murasala',
+          id: 'web-redesign',
           featured: true,
+          shortName: 'تريجر ويب',
+          image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=2070&auto=format&fit=crop',
+          category: 'واجهات مستخدم / تحول رقمي',
+          name: 'تريجر ويب لإعادة التصميم',
+          description: 'بوابتنا المتخصصة في إعادة تصميم المواقع الإلكترونية بشكل جذاب وعصري. ندمج بين الذكاء الاصطناعي واللمسة الفنية لنحول المواقع التقليدية إلى تحف رقمية تزيد من جاذبية العلامة التجارية ومعدلات التحويل.',
+          tech: ['AI Design', 'UI/UX', 'Modern Web'],
+          url: 'https://web.triger.cloud',
+          metrics: [
+            { label: 'الجاذبية البصرية', value: '١٠/١٠' },
+            { label: 'سرعة الموقع', value: '٩٩+' },
+            { label: 'تحسين الـ SEO', value: '١٠٠٪' },
+            { label: 'زيادة التحويل', value: '٤٠٪+' }
+          ]
+        },
+        {
+          id: 'murasala',
+          featured: false,
           shortName: 'مُراسلة',
           image: 'https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=2070&auto=format&fit=crop',
           category: 'تجارة إلكترونية / أتمتة البريد بالذكاء الاصطناعي',
@@ -321,6 +355,15 @@ export const translations = {
       items: [
         {
           id: '٠١',
+          tag: 'مواقع / تصميم',
+          title: 'تريجر ويب ديزاين',
+          image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&q=80&w=600',
+          desc: 'إعادة تصميم المواقع التقليدية لتصبح تجارب رقمية جذابة وعالية الأداء تزيد من قيمة العلامة التجارية.',
+          value: 'تحويل المواقع إلى أدوات بيع فعالة وجذابة بصرياً.',
+          tech: ['UI/UX', 'AI Graphics']
+        },
+        {
+          id: '٠٢',
           tag: 'متاجر / بريد إلكتروني',
           title: 'نظام مُراسلة الذكي',
           image: 'https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&q=80&w=600',
@@ -329,28 +372,19 @@ export const translations = {
           tech: ['AI Agents', 'Gmail']
         },
         {
-          id: '٠٢',
+          id: '٠٣',
           tag: 'مبيعات / واتساب',
           title: 'بائع ذكي 24/7',
           image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=600',
           desc: 'بنينا عميل ذكي على الواتساب يرد على الزبائن، يشرح لهم الخدمة، ويحجز المواعيد في غيابك.',
           value: 'سرعة رد فورية لكل العملاء، وزادت المواعيد المحجوزة ٣ أضعاف.',
           tech: ['GPT-4', 'WATI']
-        },
-        {
-          id: '٠٣',
-          tag: 'عمليات / عقود',
-          title: 'أتمتة العقود والدفع',
-          image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=600',
-          desc: 'مجرد ما يدفع العميل، النظام يولد العقد ويرسله للتوقيع ويؤرشفه. لا يحتاج موظف ولا متابعة.',
-          value: 'العقد اللي كان ياخذ يومين، صار يخلص في دقيقتين وبدون تدخل بشري.',
-          tech: ['Make', 'DocuSign']
         }
       ]
     },
     contact: {
       title: 'جاهز لتشخيص هندسي احترافي؟',
-      desc: 'لا تكتفِ بـ "التواصل". دعنا نشخص ثغراتك التشغيلية. سيقوم مهندسونا بمراجعة مهامك اليدوية وتقديم تقرير جدوى خلال ٢٤ ساعة.',
+      desc: 'اللا تكتفِ بـ "التواصل". دعنا نشخص ثغراتك التشغيلية. سيقوم مهندسونا بمراجعة مهامك اليدوية وتقديم تقرير جدوى خلال ٢٤ ساعة.',
       name: 'الاسم الكامل',
       email: 'البريد الرسمي',
       company: 'اسم الشركة / العلامة التجارية',
@@ -442,7 +476,7 @@ export const translations = {
       title: 'تريجر — بناء القوة العاملة الصامتة',
       copyright: '© 2025 جميع الحقوق محفوظة لشركة تريجر .',
       socials: {
-        linkedin: 'https://www.linkedin.com/in/trigger-sa-36a3803a3/',
+        linkedin: 'https://www.linkedin.com/company/trigger-ksa',
         x: 'https://x.com/Trigger_ksa',
         instagram: 'https://www.instagram.com/trigger_ksa/'
       },
