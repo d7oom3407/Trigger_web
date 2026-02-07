@@ -53,8 +53,8 @@ const ProjectsSection: React.FC<Props> = ({ t, lang, setView }) => {
                   </p>
                 </div>
 
-                {/* Result Box */}
-                <div className="mt-auto pt-8 border-t border-white/5">
+                {/* Result Box & Action Button */}
+                <div className="mt-auto pt-8 border-t border-white/5 space-y-4">
                   <div className="bg-[#5a16dd]/10 p-6 rounded-3xl border border-[#5a16dd]/20 group-hover:bg-[#5a16dd]/20 transition-all">
                     <span className="text-[10px] font-black uppercase tracking-widest text-[#6b27ed] block mb-2 opacity-70">
                       {lang === 'ar' ? 'النتيجة المحققة' : 'The Result'}
@@ -63,6 +63,18 @@ const ProjectsSection: React.FC<Props> = ({ t, lang, setView }) => {
                       {project.value}
                     </span>
                   </div>
+
+                  {project.url && (
+                    <a 
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full flex items-center justify-center gap-2 bg-white/5 hover:bg-[#5a16dd] border border-white/10 hover:border-[#5a16dd] text-white py-4 rounded-2xl transition-all duration-300 font-black italic uppercase text-sm group/btn shadow-lg"
+                    >
+                      {lang === 'ar' ? 'زيارة الموقع' : 'Visit Website'}
+                      <span className={`transition-transform duration-300 group-hover/btn:translate-x-1 ${lang === 'ar' ? 'rotate-180 group-hover/btn:-translate-x-1' : ''}`}>→</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
